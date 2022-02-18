@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
+/* variables */
+:root {
+  --col-primary: #007aff;
+  --col-light: #a0a0a0;
+  --col-white: #fafafa;
+}
+
 /* reset */
 * {
   margin: 0;
@@ -9,6 +16,10 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -18,4 +29,47 @@ a {
 
 li {
   list-style: none;
+}
+
+/* utility classes */
+.bg-primary {
+  background-color: var(--col-primary);
+}
+.text-primary {
+  color: var(--col-primary);
+}
+.text-light {
+  color: var(--col-light);
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+
+/* main styles */
+
+/* topBar */
+.topBar {
+  padding: 1.3rem;
+  background: var(--col-white);
+  font-size: 1.5rem;
+}
+.topBar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBar li {
+  margin-right: 1.5rem;
+}
+.topBar i{
+  float: left;
+  margin-right: 0.6rem;
+  margin-top: 2px;
+  font-size: 1.5rem;
 }
