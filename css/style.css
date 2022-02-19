@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 /* variables */
 :root {
@@ -6,6 +6,7 @@
   --col-primary-dark: #086ad8;
   --col-light: #a0a0a0;
   --col-white: #fafafa;
+  --col-black: #1d1d1d;
 }
 
 /* reset */
@@ -42,8 +43,8 @@ li {
 .text-light {
   color: var(--col-light);
 }
-.text-white{
-  color:var(--col-white)
+.text-white {
+  color: var(--col-white);
 }
 
 .container {
@@ -55,6 +56,7 @@ li {
 }
 
 .btn {
+  display: inline-block;
   background-color: var(--col-white);
   padding: 1.2rem 2.3rem;
   border: none;
@@ -62,6 +64,9 @@ li {
   cursor: pointer;
 }
 
+.transition-sm {
+  transition: 0.2s all;
+}
 
 /* main styles */
 
@@ -113,11 +118,58 @@ li {
 .nav__menu li a {
   color: var(--col-white);
 }
-.nav__quote{
-  transition: .2s all;
-
+.nav__quote {
+  transition: 0.2s all;
 }
 .nav__quote:hover {
   background: var(--col-primary-dark);
-  color:white;
+  color: white;
+}
+
+/* header */
+.header {
+  height: 90vh;
+  color: var(--col-white);
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/img/sections/bg1.jpg") no-repeat center center / cover;
+}
+
+.header .container {
+  height: 100%;
+}
+
+.header__content {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title {
+  margin-bottom: 2.5rem;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.header__para {
+  margin-bottom: 3.5rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+}
+
+.header .header__btn {
+  padding: 2rem 3.5rem;
+  background: var(--col-primary);
+  color: var(--col-white);
+  font-weight: 1.7rem;
+  font-weight: 600;
+}
+
+.header .header__btn:hover {
+  background: var(--col-white);
+  color: var(--col-black);
 }
