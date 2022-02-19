@@ -169,7 +169,7 @@ li {
 
 /* header */
 .header {
-  height: 90vh;
+  height: 100vh;
   color: var(--col-white);
 
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
