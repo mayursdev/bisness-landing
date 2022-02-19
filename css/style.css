@@ -67,9 +67,9 @@ li {
 
 /* topBar */
 .topBar {
-  padding: 1.3rem;
+  padding: 1.5rem;
   background: var(--col-white);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .topBar .container {
   display: flex;
