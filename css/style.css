@@ -98,7 +98,7 @@ li {
 
 .quote {
   background-color: var(--col-light-grey);
-  padding:1.8rem;
+  padding: 1.8rem;
   border-left: 3px solid var(--col-primary);
   font-size: 1.5rem;
   font-weight: 600;
@@ -235,12 +235,78 @@ li {
 }
 
 .about-us__right {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .about-us__right .para {
   color: var(--col-dark-grey);
   line-height: 3rem;
+}
+
+/* services */
+.services {
+  background-color: var(--col-light-grey);
+  padding: 4rem;
+}
+
+.services__top {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  position: relative;
+  height: 36rem;
+  display: flex;
+  flex-direction: column;
+  width: 34rem;
+  box-shadow: 0 15px 44px 0px rgb(171 171 171 / 10%);
+  border-radius: 0.8rem;
+  padding: 2rem 3rem;
+  margin: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.service-card i {
+  color: var(--col-primary);
+}
+.service-card .service-icon {
+  font-size: 4.5rem;
+}
+
+.service-card .service-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.service-card .service-desc {
+  color: var(--col-dark-grey);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.service-card .service-cta {
+  font-size: 2.5rem;
+}
+
+.service-card:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/4.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.service-card:hover .service-desc {
+  color: white;
 }
