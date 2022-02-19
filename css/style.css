@@ -4,7 +4,9 @@
 :root {
   --col-primary: #007aff;
   --col-primary-dark: #086ad8;
-  --col-light: #a0a0a0;
+  --col-grey: #a0a0a0;
+  --col-light-grey: #f4f9fc;
+  --col-dark-grey: #666;
   --col-white: #fafafa;
   --col-black: #1d1d1d;
 }
@@ -37,11 +39,14 @@ li {
 .bg-primary {
   background-color: var(--col-primary);
 }
+.bg-white {
+  background: var(--col-white);
+}
 .text-primary {
   color: var(--col-primary);
 }
 .text-light {
-  color: var(--col-light);
+  color: var(--col-grey);
 }
 .text-white {
   color: var(--col-white);
@@ -62,6 +67,42 @@ li {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+.section-cta {
+  padding: 1.5rem 4rem;
+  background: var(--col-primary);
+  color: var(--col-white);
+  font-weight: 1.7rem;
+  font-weight: 600;
+}
+.section-cta:hover {
+  background: var(--col-primary-dark);
+  color: var(--col-white);
+}
+
+.section-span {
+  display: block;
+  margin-bottom: 2rem;
+  color: var(--col-dark-grey);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.section-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+
+.quote {
+  background-color: var(--col-light-grey);
+  padding:1.8rem;
+  border-left: 3px solid var(--col-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.8rem;
 }
 
 .transition-sm {
@@ -172,4 +213,34 @@ li {
 .header .header__btn:hover {
   background: var(--col-white);
   color: var(--col-black);
+}
+
+/* aboutus section */
+.about-us {
+  padding: 7rem 1rem;
+}
+.about-us .container {
+  display: flex;
+  flex: 1;
+}
+
+.about-us__left,
+.about-us__left img,
+.about-us__right {
+  width: 100%;
+}
+
+.about-us__left {
+  padding-right: 5.5rem;
+}
+
+.about-us__right {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.about-us__right .para {
+  color: var(--col-dark-grey);
+  line-height: 3rem;
 }
