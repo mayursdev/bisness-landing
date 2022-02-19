@@ -3,6 +3,7 @@
 /* variables */
 :root {
   --col-primary: #007aff;
+  --col-primary-opacity: rgba(0, 122, 255, 0.85);
   --col-primary-dark: #086ad8;
   --col-grey: #a0a0a0;
   --col-light-grey: #f4f9fc;
@@ -309,4 +310,44 @@ li {
 }
 .service-card:hover .service-desc {
   color: white;
+}
+
+/* counter */
+.counter {
+  padding: 6rem 5rem;
+  background: linear-gradient(
+      var(--col-primary-opacity),
+      var(--col-primary-opacity)
+    ),
+    url("/img/sections/bg2.jpg") center center / cover;
+  background-attachment: fixed;
+}
+.counter .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.counter__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--col-white);
+  padding: 1rem;
+  text-align: center;
+}
+.counter__wrapper .counter__icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.counter__text h3 {
+  width: 15rem;
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.counter__text h4 {
+  font-size: 2rem;
+  font-weight: 500;
 }
