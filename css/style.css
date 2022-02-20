@@ -190,6 +190,24 @@ button {
   color: white;
 }
 
+.navbar-is-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  z-index: 2;
+  box-shadow: 2px 3px 24px rgb(0 0 0 / 30%);
+}
+.navbar-is-fixed img {
+  width: 10rem;
+}
+
+.navbar-is-fixed .btn {
+  padding: 0.8rem 2rem;
+}
+
 /* header */
 .header {
   height: 100vh;
@@ -514,18 +532,18 @@ section.team {
 }
 
 /* footer */
-footer{
-  background:var(--col-primary);
-  padding:3rem 1rem;
-  color: var(--col-white)
+footer {
+  background: var(--col-primary);
+  padding: 3rem 1rem;
+  color: var(--col-white);
 }
 
-footer .footer__wrapper{
+footer .footer__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.footer__text{
+.footer__text {
   font-weight: 500;
 }
 
@@ -534,8 +552,7 @@ footer .footer__wrapper{
   justify-content: space-around;
 }
 
-
-.footer__socials li a{
+.footer__socials li a {
   margin-right: 3rem;
   color: var(--col-white);
 }
