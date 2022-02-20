@@ -36,6 +36,10 @@ li {
   list-style: none;
 }
 
+button {
+  font-family: inherit;
+}
+
 /* utility classes */
 .bg-primary {
   background-color: var(--col-primary);
@@ -418,27 +422,91 @@ section.team {
 }
 
 /* companies section */
-.companies{
-  padding:6rem 1rem;
+.companies {
+  padding: 6rem 1rem;
   background-color: var(--col-light-grey);
 }
 
-
-.companies__top{
+.companies__top {
   margin-bottom: 7rem;
   text-align: center;
 }
 
 .company {
-  width:15%
+  width: 15%;
 }
 .company img {
-  width:100%
+  width: 100%;
 }
 
-.companies__wrapper{
+.companies__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
+/* contact section */
+.contact {
+  padding: 8rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/all/inner.jpg") no-repeat center center / cover;
+  background-attachment: fixed;
+  color: var(--col-white);
+}
 
+.contact__wrapper {
+  display: flex;
+}
+
+.contact__left,
+.contact__right {
+  width: 100%;
+}
+
+.contact__right .section-span {
+  color: var(--col-white);
+}
+
+.contact__right p {
+  color: var(--col-light-grey);
+  line-height: 3rem;
+  margin-bottom: 6.5rem;
+}
+
+.contact__left {
+  padding-right: 5rem;
+}
+
+.contact__right .btn {
+  text-align: center;
+  display: block;
+}
+.contact__left .btn {
+  margin-top: 2.5rem;
+  text-align: center;
+  display: block;
+}
+.form-group textarea,
+.form-group input {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--col-grey);
+}
+
+form {
+  background: var(--col-white);
+  color: var(--col-black);
+  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+}
+
+.form-group {
+  margin: 1.2rem 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
