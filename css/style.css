@@ -416,3 +416,14 @@ section.team {
 .team__socials i {
   color: var(--col-white);
 }
+
+/* companies section */
+.companies{
+  padding:6rem 1rem;
+  background-color: var(--col-light-grey);
+}
+
+.companies__wrapper{
+  display: flex;
+  justify-content: space-around;
+}
