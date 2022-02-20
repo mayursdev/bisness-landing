@@ -441,12 +441,13 @@ section.team {
 
 /* companies section */
 .companies {
-  padding: 6rem 1rem;
+  padding-bottom: 9rem;
+  padding-top: 6rem;
   background-color: var(--col-light-grey);
 }
 
 .companies__top {
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
   text-align: center;
 }
 
