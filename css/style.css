@@ -423,7 +423,22 @@ section.team {
   background-color: var(--col-light-grey);
 }
 
+
+.companies__top{
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+.company {
+  width:15%
+}
+.company img {
+  width:100%
+}
+
 .companies__wrapper{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+
