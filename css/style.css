@@ -73,6 +73,24 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+.form-group {
+  margin: 1.2rem 0;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form-group textarea,
+.form-group input {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--col-grey);
+}
+
 .section-cta {
   padding: 1.5rem 4rem;
   background: var(--col-primary);
@@ -462,6 +480,23 @@ section.team {
   width: 100%;
 }
 
+.contact__left {
+  padding-right: 5rem;
+}
+
+.contact form {
+  background: var(--col-white);
+  color: var(--col-black);
+  border-radius: 0.3rem;
+  padding: 5rem;
+}
+
+.contact__left .btn {
+  margin-top: 2.5rem;
+  text-align: center;
+  display: block;
+}
+
 .contact__right .section-span {
   color: var(--col-white);
 }
@@ -472,41 +507,7 @@ section.team {
   margin-bottom: 6.5rem;
 }
 
-.contact__left {
-  padding-right: 5rem;
-}
-
 .contact__right .btn {
   text-align: center;
   display: block;
-}
-.contact__left .btn {
-  margin-top: 2.5rem;
-  text-align: center;
-  display: block;
-}
-.form-group textarea,
-.form-group input {
-  width: 100%;
-  border: none;
-  padding: 1rem;
-  border-radius: 0.3rem;
-  border: 1px solid var(--col-grey);
-}
-
-form {
-  background: var(--col-white);
-  color: var(--col-black);
-  border-radius: 0.5rem;
-  padding: 2rem 4rem;
-}
-
-.form-group {
-  margin: 1.2rem 0;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
 }
