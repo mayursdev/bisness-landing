@@ -4,7 +4,7 @@ new PureCounter({
 });
 
 // fixed nav on scroll
-const fixNav = (e) => {
+const fixNav = () => {
   const thresh = navbarHeight.split("px")[0] * 2;
   const currentScrollAt = window.scrollY;
   console.log({
@@ -21,7 +21,17 @@ const fixNav = (e) => {
   }
 };
 
+const showScrollTop = ()=>{
+
+  if(window.scrollY > 600) scrollTopBtn.classList.remove('hide')
+  else scrollTopBtn.classList.add('hide')
+}
+
 const navbar = document.querySelector(".fixed-navbar");
 const navbarHeight = window.getComputedStyle(navbar).height;
+const scrollTopBtn = document.querySelector('.scrollTop');
 
-document.addEventListener("scroll", fixNav);
+document.addEventListener("scroll", () => {
+  fixNav();
+  showScrollTop();
+});
